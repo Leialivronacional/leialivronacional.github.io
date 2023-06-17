@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Dados Pessoais</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Dados Pessoais</h1>
+        <form action="processar_formulario.php" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+
+            <div class="form-group">
+                <label for="estado">Estado:</label>
+                <select id="estado" name="estado" required>
+                    <option value="">Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <!-- Restante das opções de estados -->
+                </select>
+            </div>
+
+            <h2>Dados Bancários</h2>
+
+            <div class="form-group">
+                <label for="banco">Banco:</label>
+                <input type="text" id="banco" name="banco" required>
+            </div>
+
+            <div class="form-group">
+                <label for="agencia">Agência:</label>
+                <input type="text" id="agencia" name="agencia" required>
+            </div>
+
+            <div class="form-group">
+                <label for="conta">Conta:</label>
+                <input type="text" id="conta" name="conta" required>
+            </div>
+
+            <div class="form-group">
+                <label for="chave-pix">Chave PIX:</label>
+                <input type="text" id="chave-pix" name="chave-pix" required>
+            </div>
+
+            <input type="submit" value="Enviar" class="btn-submit">
+        </form>
+    </div>
+</body>
+</html>
